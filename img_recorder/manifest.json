@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "OAI Image Recorder",
+  "version": "1.0",
+  "description": "Records images from oaiusercontent.com domains during browsing sessions",
+  "permissions": [
+    "webRequest",
+    "downloads",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.oaiusercontent.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo.png",
+      "48": "images/logo.png",
+      "128": "images/logo.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  }
+} 
